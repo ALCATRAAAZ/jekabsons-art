@@ -42,3 +42,5 @@ document.querySelector('.image-grid').addEventListener(
   false
 )();
 buttonClick();
+
+// to create a button for language select use event.target.classList.contains('selected')
