@@ -10,7 +10,7 @@ if (document.querySelector('ul')) {
 document.querySelector('.intro-text')
   ? (Intro = document.querySelector('.intro-text').innerHTML)
   : (Intro = 1);
-document.querySelector('.cta-inner')
+document.querySelector('section.page-section.cta > div > div > div > div > div')
   ? (CTA = document.querySelector('.cta-inner').innerHTML)
   : (CTA = 1);
 const LangToggle = () => {
