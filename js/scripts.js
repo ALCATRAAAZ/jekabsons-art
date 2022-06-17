@@ -1,8 +1,11 @@
-document.querySelector('.Language-toggler').addEventListener('mouseenter', (event2) => 
-{console.log(event2);
-  event2.preventDefault();
-import('./LANG.js')
-});
+//Lazy loading JS
+document
+  .querySelector('.Language-toggler')
+  .addEventListener('mouseenter', (event2) => {
+    console.log(event2);
+    event2.preventDefault();
+    import('./LANG.js');
+  });
 
 // Highlights current date on contact page
 window.addEventListener('DOMContentLoaded', (event) => {
