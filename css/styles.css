@@ -94,7 +94,38 @@ section.page-section.cta{
   background-color:#2E1911;
   opacity: 0.8;
 }
-
+.Language-toggler{
+  /* background-color: #342F2D; */
+  align-self: inherit;
+  background-color:none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: inherit;
+  opacity: 1;
+}
+/* .Language-toggler .LV{
+  align-self: center;
+  background-color:rgb(95, 15, 15);
+  border: solid;
+  border-color: purple;
+  outline: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  
+}
+.Language-toggler .EN{
+  /* background-color: #342F2D; 
+  align-self: center;
+  background-color:red;
+  border: solid;
+  border-color: purple;
+  outline: none;
+  border-radius: 5px;
+  font-family: inherit;
+  opacity: 0.6;
+} */
 
 hr {
   margin: 1rem 0;
