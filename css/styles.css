@@ -97,7 +97,7 @@ section.page-section.cta{
 .Language-toggler{
   /* background-color: #342F2D; */
   align-self: inherit;
-  background-color:none;
+  background-color: inherit;
   border: none;
   outline: none;
   border-radius: 5px;
