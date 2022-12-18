@@ -16,6 +16,7 @@ document.querySelector('section.page-section.cta > div > div > div > div > div')
 const LangToggle = () => {
   LV.addEventListener('click', (event) => {
     //check if clicked on EN
+    console.log(event.target.innerText);
     if (event.target.innerText == 'EN') {
       //Create the default body
       document.querySelector('ul').innerHTML = UL;
@@ -28,7 +29,7 @@ const LangToggle = () => {
         ? (document.querySelector(
             'ul'
           ).innerHTML = `<li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase" href="index.html">Uz Sākumu</a>
+              <a class="nav-link text-uppercase" href="index${event.target.innerText}.html">Uz Sākumu</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase" href="about.html">Par</a>
@@ -41,7 +42,24 @@ const LangToggle = () => {
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase" href="store.html">Kontakti</a>
             </li>`)
-        : console.log(UL);
+        : //saja vieta no indexLV nomainas nosaukumi uz index nosaukumiem anglu valoda
+          (document.querySelector(
+            'ul'
+          ).innerHTML = `<li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="products.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="store.html">Contact</a>
+            </li>`);
+
       Intro !== 1
         ? (document.querySelector(
             '.intro-text'
@@ -63,7 +81,7 @@ const LangToggle = () => {
                 <span class="section-heading-lower"> Jums </span>
               </h2>
               <p class="mb-0">
-                
+                Jauku ceļojumu manā mājaslapā
               </p>
               <div class="intro-button mx-auto">
                 <a class="btn btn-primary btn-xl" href="store.html">
@@ -75,3 +93,4 @@ const LangToggle = () => {
 };
 
 LangToggle();
+

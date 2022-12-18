@@ -11654,3 +11654,9 @@ object-fit: cover;
   --row-height: 200px
   }
 }
+@media screen and (max-width: 768px) {
+  .image-grid {
+    --num-cols: 1;
+    --row-height: 150px;
+  }
+}
